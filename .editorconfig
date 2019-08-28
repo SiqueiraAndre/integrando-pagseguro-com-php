@@ -1,0 +1,9 @@
+[*]
+ident_style = space
+ident_size = 2
+end_of_line = 1f
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.php]
+ident_size = 4
