@@ -34,7 +34,7 @@ $pag_seguro->addProduct(2, 'Livro de Laravel', 15, 31, 1.5);
 //requisição
 $pag_seguro_request = new BrPayments\Requests\PagSeguro();
 
-$response = (new BrPayments\MakeRequest())->post($pag_seguro, true);
+$response = (new BrPayments\MakeRequest($pag_seguro_request))->make($pag_seguro, true);
 
 $xml = new \SimpleXMLElement((string)$response);
 $url = $pag_seguro_request->getUrlFinal($xml->code, true);
