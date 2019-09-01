@@ -11,7 +11,7 @@ abstract class RequestAbstract implements RequestInterface
     public function getUrl(Order $order, bool $sandbox = null) : string
     {
         if ($sandbox) {
-            return $this->getChildConstant('url_sandbox'). (string)$order;
+            return $this->getChildConstant('url_sandbox') . (string)$order;
         }
         return $this->getChildConstant('url') . (string)$order;
     }

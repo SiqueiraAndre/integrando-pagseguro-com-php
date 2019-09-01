@@ -5,7 +5,7 @@ namespace BrPayments\MakeRequest\PagSeguro;
 use PHPUnit\Framework\TestCase;
 
 use BrPayments\Notifications\PagSeguro;
-use BrPayments\Requests\testPagSeguroNotification;
+use BrPayments\Requests\PagSeguroNotification;
 use BrPayments\MakeRequest;
 
 class PagSeguroNotificationTest extends TestCase

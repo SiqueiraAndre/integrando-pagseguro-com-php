@@ -1,6 +1,6 @@
 <?php
 
-namespace   BrPayments\Notifications;
+namespace BrPayments\Notifications;
 
 use BrPayments\OrderInterface;
 
@@ -14,7 +14,7 @@ class PagSeguro implements OrderInterface
         $this->config = $config;
     }
 
-    public function __toString() : string
+    public function __toString() :string
     {
         $access = [
             'email' =>$this->config['email'],
